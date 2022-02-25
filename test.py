@@ -52,7 +52,7 @@ print(response.json())
 
 input()
 # gets the user data of the given id error check
-response = requests.get(BASE + "parent/3")
+response = requests.get(BASE + "parent/1")
 print(response.json())
 
 print("child test")
@@ -85,20 +85,20 @@ print("child user data update test")
 
 # updates user data of the given id
 response = requests.patch(
-    BASE + "child/32", {"parentId": 3})
+    BASE + "child/22", {"parentId": 3})
 print(response.json())
 
 input()
 # updates user data of the given id error check
 response = requests.patch(
-    BASE + "child/32", {"parentId": 3})
+    BASE + "child/51", {"parentId": 3})
 print(response.json())
 
 input()
 print("child user data read test")
 
 # gets the user data of the given id
-response = requests.get(BASE + "child/33")
+response = requests.get(BASE + "child/23")
 print(response.json())
 
 input()
